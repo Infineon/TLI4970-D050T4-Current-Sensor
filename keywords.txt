@@ -1,0 +1,57 @@
+#######################################
+# Syntax Coloring Map For TLI4970
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+end	KEYWORD2
+readOut	KEYWORD2
+getCurrMessage	KEYWORD2
+getCurrent	KEYWORD2
+getStatus	KEYWORD2
+getGeneralError	KEYWORD2
+getHardwareError	KEYWORD2
+getOverLoadError	KEYWORD2
+getOverTempError	KEYWORD2
+getCommunicationError	KEYWORD2
+getOverCurrent	KEYWORD2
+startConfiguration	KEYWORD2
+abortConfiguration	KEYWORD2
+confirmConfiguration	KEYWORD2
+getEepromBits	KEYWORD2
+setEepromBits	KEYWORD2
+
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+Tli4970	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+HP	LITERAL1 
+PR	LITERAL1
+LP_SETTING	LITERAL1
+INVERT_HADC	LITERAL1
+IC_STAT	LITERAL1
+OCD_OFF	LITERAL1
+OVCL	LITERAL1
+OVCF	LITERAL1
+OCD_PP	LITERAL1
+SR_OCD	LITERAL1
+SR_DIO	LITERAL1
+USR_LOCK	LITERAL1
+GAIN	LITERAL1
+CHIP_ID_2	LITERAL1
+CHIP_ID_1	LITERAL1
+CHIP_ID_0	LITERAL1
