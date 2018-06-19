@@ -1,4 +1,4 @@
-# DPS310-Pressure-Sensor
+# TLI4970-Pressure-Sensor
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/TLI4970_PP.jpg">
 
 Library of Infineon's [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) current sensor for Arduino.
