@@ -34,7 +34,7 @@ Please ensure that you have the TLI4970-D050T4 variant of the sensor as the libr
 ### Integration of Library
 Please download this repository from GitHub by clicking on the following field in the latest [release](https://github.com/Infineon/TLI4970-Current-Sensor/releases) of this repository or directly [here](https://github.com/Infineon/TLI4970-Current-Sensor/releases/V1.0.0/TLI4970-Current-Sensor.zip):
 
-![Download Library](https://raw.githubusercontent.com/Infineon/assets/master/Pictures/DL_TLI4970_Rel.jpg)
+![Download Library](https://raw.githubusercontent.com/infineon/assets/master/Pictures/Releases_Generic.jpg)
 
 To install the TLI4970 current sensor library in the Arduino IDE, please go now to **Sketch** > **Include Library** > **Add .ZIP Library...** in the Arduino IDE and navigate to the downloaded .ZIP file of this repository. The library will be installed in your Arduino sketch folder in libraries and you can select as well as include this one to your project under **Sketch** > **Include Library** > **TLI4970**.
 
