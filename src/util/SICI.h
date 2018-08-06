@@ -38,7 +38,7 @@
 #define TLI4970_SICI_H_INCLUDED
 
 #include <Arduino.h>
-#include "../../OneWire/src/OneWire.h"
+#include "OneWire.h"
 
 namespace tli4970
 {
