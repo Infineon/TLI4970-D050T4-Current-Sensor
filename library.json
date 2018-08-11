@@ -1,0 +1,29 @@
+{
+  "name": "TLI4970-D050T4-Current-Sensor",
+  "keywords": "current, sensor2go",
+  "description": "This library provides an Interface for Infineon's TLI4970-D050T4 Current Sensor",
+  "authors":
+  {
+    "name": "Infineon",
+    "url": "https://www.infineon.com/cms/en/product/sensor/magnetic-current-sensor/tli4970-d050t4/"
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Infineon"
+  },
+  "examples":
+  [
+    "examples/*/*.ino",
+    "examples/*/*/*.ino"
+  ],
+  "export": {
+    "include":
+    [
+        "src/util/*.h"
+    ]
+},
+  "version": "1.0.1",
+  "frameworks": "arduino",
+  "platforms": "infineonxmc"
+}
