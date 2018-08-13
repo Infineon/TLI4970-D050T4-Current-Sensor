@@ -35,7 +35,7 @@
 #define TLI4970_H_INCLUDED
 
 #include <SPI.h>
-#include "util/TLI4970_consts.h"
+#include "util/Tli4970_consts.h"
 
 #define USE_CURRENT2GOKIT
 

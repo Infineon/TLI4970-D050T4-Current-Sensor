@@ -19,7 +19,7 @@ env:
 
 install:
     - pip install -U platformio
-    - platformio platform install -f infineonxmc
+    - platformio platform install infineonxmc
 script:
     - platformio ci --lib="." --board=xmc1100_xmc2go
 
