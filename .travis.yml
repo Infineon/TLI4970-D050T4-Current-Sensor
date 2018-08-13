@@ -1,8 +1,6 @@
 language: python
 python:
     - "2.7"
-
-sudo: required
         
 branches:
   only:
@@ -21,7 +19,7 @@ install:
     - pip install -U platformio
     - platformio platform install infineonxmc
 script:
-    - platformio ci --lib="." --board=xmc1100_xmc2go
+    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit --board=xmc1100_h_bridge2go --board=xmc1300_boot_kit --board=xmc4700_relax_kit --project-option="lib_deps=Wire"
 
 after_success:
     # only build once (after one job by checking id, however this does not work reliably)

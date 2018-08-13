@@ -1,4 +1,7 @@
 # TLI4970-Current-Sensor
+
+[![Build Status](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor.svg?branch=master)](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor)
+
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/TLI4970_PP.jpg">
 
 Library of Infineon's [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) current sensor for Arduino.
