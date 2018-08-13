@@ -3,51 +3,23 @@ python:
     - "2.7"
 
 sudo: required
-cache:
-    directories:
-        - "~/.platformio"
         
 branches:
   only:
     - master
-    
-addons:
-  apt_packages:
-    - lib32bz2-1.0
-    - lib32ncurses5
-    - lib32z1
-    
-before_script:
-  - wget https://github.com/Infineon/Assets/releases/download/current/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.-d-.tar.bz2 -O /tmp/gcc-arm-none-eabi.tar.bz2
-  - tar -xjf /tmp/gcc-arm-none-eabi.tar.bz2
-  - export PATH=$PATH:$PWD/gcc-arm-none-eabi-5_4-2016q3/bin/
-
 env:
     global:
         - USR_NAME="mhoechner"
         - USR_EMAIL="Moritz.Hoechner@infineon.com"
+        # new token needs to be generated & encrypted
         - secure: OLSYr2ioMsqS+l43+s+yzfaVeCTK0Z1ky+Tm31bHdU66Ahq8+ZiDNX4fVDuziJtuHJWR3pEmqnYdSqSqcuByObM+I7uW3RaV2fOAtvCnWQcar5jt0+TYHuuLbfLu7vsL6ntBkQJXWibLO3JlVFp8ZVNd33WUE0mrnNdR7xormwy6EV7Ry9X/j43G+zHGjAKXxcfWIKs279pHvhtye4Vhlg3U8MkEwlkgpGiMbpWmk5CaePTi82KuoIOAceVZ8ixssuqpt4DgCnl7m6t1D+8MnjXxPLISvOr0pHNHTJ+3/gv1dGUrxENyPiW9d1q8OnrKyD9CniqC6Rklj+g5mhR+v+FJvjfa2k85SXVvFYikkqUyXkIVZkJu+PxZX0mfY18SbI7GB8mOkjgcusI9KhzNhZJQxUzza/DBe2MOR72mHVdpHlsOtx/1PjaUjJtS6lFBBZw1gCKYsFkGU3UfY+Jr3yajU1veCICgde0gm3SfhCDsQVymi7hsfnbBj8YhrY1K5+YJ6JHk5Wu6x2SsT8Al2/YSZoDdUDCZZ8Y4WNO+ZY2vF0ZU3jOcK/JSuLV6W7VzXAhSaYHVAHq2fXNgW7EWkRaLeFGtjgwvZIkhQ1Mrsl6oObMJhFhaD6vP4MlwvTWKp0MB8NdFWsgR2ITU80sREp4RBzJVSQIvLiBCIwi0upY=
     matrix:
         - PLATFORMIO_CI_SRC=examples/configEEPROM
         - PLATFORMIO_CI_SRC=examples/getCurrent 
 
 install:
-    ## build with stable core
-    # - git clone https://github.com/Infineon/platformio-infineonxmc.git /tmp/builder
-    # - pip install -U platformio
-    # - platformio platform install -f file:///tmp/builder/. 
-
-    # build with development version
-    - git clone https://github.com/Infineon/XMC-for-Arduino.git /tmp/core
-    - zip -r /tmp/core/framework-arduinoxmc.zip /tmp/core/arm  
-    - git clone https://github.com/Infineon/platformio-infineonxmc.git /tmp/builder
-    - cd /tmp/builder
-    - platform_json=$(<platform.json)
-    - rm platform.json
-    - jq '.packages."framework-arduinoxmc".version = "file:///tmp/core/framework-arduinoxmc.zip"' <<<"$platform_json" > platform.json
     - pip install -U platformio
-    - platformio platform install -f file://. 
-    - cd -
+    - platformio platform install -f infineonxmc
 script:
     - platformio ci --lib="." --board=xmc1100_xmc2go
 
