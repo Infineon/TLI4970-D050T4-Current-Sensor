@@ -7,7 +7,7 @@
 Library of Infineon's [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) current sensor for Arduino.
 
 ## Summary
-The [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) is a high-precision current sensor based on Infineon´s proven Hall technology. 
+The [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) is a high-precision current sensor based on Infineon's proven Hall technology. 
 The coreless concept significantly reduces footprint compared with existing solutions. TLI4970 is an easy-to-use, fully digital solution that does not require external calibration or additional parts such as A/D converters, 0 pAmps or reference voltage. It thus significantly reduces overall implementation efforts as well as PCB space and cost.
 
 ## Key Features and Benefits
