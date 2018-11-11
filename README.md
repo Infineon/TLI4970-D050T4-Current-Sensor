@@ -7,7 +7,7 @@
 Library of Infineon's [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) current sensor for Arduino.
 
 ## Summary
-The [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) is a high-precision current sensor based on Infineon´s proven Hall technology. 
+The [TLI4970](https://www.infineon.com/cms/de/product/sensor/magnetic-current-sensor/tli4970-d050t4/) is a high-precision current sensor based on Infineon's proven Hall technology. 
 The coreless concept significantly reduces footprint compared with existing solutions. TLI4970 is an easy-to-use, fully digital solution that does not require external calibration or additional parts such as A/D converters, 0 pAmps or reference voltage. It thus significantly reduces overall implementation efforts as well as PCB space and cost.
 
 ## Key Features and Benefits
@@ -38,7 +38,7 @@ Please ensure that you have the TLI4970-D050T4 variant of the sensor as the libr
 ### Integration of Library
 
 #### Prework
-´Important Note´
+`Important Note`
 This library uses the [One Wire](https://github.com/PaulStoffregen/OneWire) library from PaulStoffregen. Please install the One Wire library before you install or use the library for the TLI4970-D050T4 Current Sensor. You can find the One Wire library in the Library Manager in the Arduino IDE **Sketch** > **Include Library** > **Manage Libraries...** or directly in the official repository:
 
 [One Wire Library Repository](https://github.com/PaulStoffregen/OneWire)
