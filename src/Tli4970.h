@@ -37,8 +37,6 @@
 #include <SPI.h>
 #include "util/Tli4970_consts.h"
 
-#define USE_CURRENT2GOKIT
-
 class Tli4970
 {
 public:
@@ -89,11 +87,14 @@ public:
 	
 	void abortConfiguration(void);
 	void confirmConfiguration(void);
+
+	void setPinOCD(uint8_t pinOCD);
 	
 private: 
 	SPIClass *mBus;
 	uint8_t mPinCS;
-	uint8_t mPinOCD;
+	// Define as signed integer to check definition
+	int8_t mPinOCD;
 	uint8_t mPinDIO;
 	uint8_t mEnabled;
 	uint8_t mConfigMode;
