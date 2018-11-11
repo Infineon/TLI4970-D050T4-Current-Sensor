@@ -56,14 +56,12 @@ void Tli4970::begin(void)
 	mEnabled = true;
 }
 
-void Tli4970::begin(SPIClass &bus, uint8_t pinCS, uint8_t pinOCD, uint8_t pinDIO)
+void Tli4970::begin(SPIClass &bus, uint8_t pinCS, uint8_t pinDIO)
 {
-	// Reconfigure mBus ,mPinCS ,mPinOCD and mPinDIO
+	// Reconfigure mBus ,mPinCS, and mPinDIO
 	mBus = &bus;
 	mPinCS = pinCS;
-	mPinOCD = pinOCD;
 	mPinDIO = pinDIO;
-	pinMode(mPinOCD, INPUT);
 	begin();
 }
 
