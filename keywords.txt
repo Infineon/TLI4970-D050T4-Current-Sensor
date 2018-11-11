@@ -24,6 +24,7 @@ getCommunicationError	KEYWORD2
 getOverCurrent	KEYWORD2
 startConfiguration	KEYWORD2
 abortConfiguration	KEYWORD2
+setPinOCD KEYWORD2
 confirmConfiguration	KEYWORD2
 getEepromBits	KEYWORD2
 setEepromBits	KEYWORD2
