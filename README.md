@@ -36,9 +36,6 @@ Please ensure that you have the TLI4970-D050T4 variant of the sensor as the libr
 ## Installation
 
 ### Integration of Library
-<<<<<<< HEAD
-Please download this repository from GitHub by clicking on the following field in the latest [release](https://github.com/Infineon/TLI4970-Current-Sensor/releases) of this repository:
-=======
 
 #### Prework
 ´Important Note´
@@ -49,7 +46,6 @@ This library uses the [One Wire](https://github.com/PaulStoffregen/OneWire) libr
 #### Installation of the Library
 
 Please download this repository from GitHub by clicking on the following field in the latest [release](https://github.com/Infineon/TLI4970-Current-Sensor/releases) of this repository or directly [here](https://github.com/Infineon/TLI4970-Current-Sensor/releases/V1.0.0/TLI4970-Current-Sensor.zip):
->>>>>>> develop
 
 ![Download Library](https://raw.githubusercontent.com/infineon/assets/master/Pictures/Releases_Generic.jpg)
 
