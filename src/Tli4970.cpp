@@ -40,7 +40,7 @@ Tli4970::Tli4970(void)
 {
 	mBus = &SPI;
 	mPinCS = TLI4970_STD_CS;
-	mPinOCD = TLI4970_STD_OCD;
+	mPinOCD = -1;
 	mPinDIO = TLI4970_STD_DIO;
 	mStatus = 0;
 	mEnabled = false;
@@ -52,9 +52,7 @@ void Tli4970::begin(void)
 	mBus->begin();
 	mBus->setDataMode(SPI_MODE1);
 	pinMode(mPinCS, OUTPUT);
-	pinMode(mPinOCD, INPUT);
 	digitalWrite(mPinCS, HIGH);
-	
 	mEnabled = true;
 }
 
@@ -65,13 +63,15 @@ void Tli4970::begin(SPIClass &bus, uint8_t pinCS, uint8_t pinOCD, uint8_t pinDIO
 	mPinCS = pinCS;
 	mPinOCD = pinOCD;
 	mPinDIO = pinDIO;
-	
+	pinMode(mPinOCD, INPUT);
 	begin();
 }
 
 void Tli4970::end(void)
 {
-	pinMode(mPinOCD, INPUT);
+	if(mPinOCD >= 0){
+		pinMode(mPinOCD, INPUT);
+	}
 	pinMode(mPinCS, INPUT);
 	mStatus = 0;
 	mEnabled = false;
@@ -80,6 +80,12 @@ void Tli4970::end(void)
 void Tli4970::setSPIClockDivider(uint8_t div)
 {
 	mBus->setClockDivider(div);
+}
+
+void Tli4970::setPinOCD(uint8_t pinOCD)
+{
+	mPinOCD = pinOCD;
+	pinMode(mPinOCD, INPUT);
 }
 
 uint8_t Tli4970::readOut(void)
@@ -161,7 +167,7 @@ uint16_t Tli4970::getStatusBits(uint8_t mask)
 
 void Tli4970::startConfiguration(void)
 {
-	if(mEnabled)
+	if(mEnabled && (mPinOCD >= 0))
 	{
 		tli4970::Sici bus = tli4970::Sici(mPinOCD);
 		uint16_t cmd;
@@ -206,13 +212,15 @@ void Tli4970::setEepromBits(uint8_t mask, uint16_t data)
 
 void Tli4970::abortConfiguration(void)
 {
-	pinMode(mPinOCD, INPUT);
+	if(mPinOCD >= 0){
+		pinMode(mPinOCD, INPUT);
+	}
 	mConfigMode = false;
 }
 
 void Tli4970::confirmConfiguration(void)
 {
-	if(mEnabled && mConfigMode)
+	if(mEnabled && mConfigMode && (mPinOCD >= 0))
 	{
 		tli4970::Sici bus = tli4970::Sici(mPinOCD);
 		bus.begin();
