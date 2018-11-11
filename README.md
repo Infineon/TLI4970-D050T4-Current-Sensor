@@ -38,7 +38,7 @@ Please ensure that you have the TLI4970-D050T4 variant of the sensor as the libr
 ### Integration of Library
 
 #### Prework
-´Important Note´
+`Important Note`
 This library uses the [One Wire](https://github.com/PaulStoffregen/OneWire) library from PaulStoffregen. Please install the One Wire library before you install or use the library for the TLI4970-D050T4 Current Sensor. You can find the One Wire library in the Library Manager in the Arduino IDE **Sketch** > **Include Library** > **Manage Libraries...** or directly in the official repository:
 
 [One Wire Library Repository](https://github.com/PaulStoffregen/OneWire)
