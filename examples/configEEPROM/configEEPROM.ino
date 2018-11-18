@@ -11,7 +11,9 @@ void setup() {
   // Use default SPI for communication with the Tli4970
   Tli4970CurrentSensor.begin();
   // Use custom SPI
-  //Tli4970CurrentSensor.begin(SPI2, (uint8_t)96u, (uint8_t)71u, (uint8_t)97u);
+  //Tli4970CurrentSensor.begin(SPI2, (uint8_t)96u, (uint8_t)97u);
+  // Set a OCD pin in addition to the begin() functions to enable it
+  // Tli4970CurrentSensor.setPinOCD((uint8_t)71u);
 }
 
 // the loop function runs over and over again forever
