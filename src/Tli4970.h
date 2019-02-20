@@ -62,7 +62,7 @@ public:
 
 	Tli4970(void);
 	void begin(void);
-	void begin(SPIClass &bus, uint8_t pinCS, uint8_t pinOCD, uint8_t pinDIO);
+	void begin(SPIClass &bus, uint8_t pinCS, uint8_t pinDIO);
 	void end(void);
 	
 	void setSPIClockDivider(uint8_t div);
