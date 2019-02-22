@@ -42,10 +42,7 @@
 	    #define TLI4970_STD_SPI				13
         #define TLI4970_STD_CS				10
         #define TLI4970_STD_DIO				12
-
-#define TLI4970_STD_SPI				2
-#define TLI4970_STD_CS				3
-#define TLI4970_STD_DIO				0
+#endif		
 
 #define TLI4970_READOUT_ERROR		1
 #define TLI4970_READOUT_SUCCESS		0
