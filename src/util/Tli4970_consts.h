@@ -34,6 +34,8 @@
 #ifndef TLI4970_CONSTS_H_INCLUDED
 #define TLI4970_CONSTS_H_INCLUDED
 
+
+
 #if defined(XMC1100_XMC2GO) || defined(XMC1100_H_BRIDGE2GO)
         #define TLI4970_STD_SPI				2
         #define TLI4970_STD_CS				3
@@ -42,6 +44,10 @@
 	    #define TLI4970_STD_SPI				13
         #define TLI4970_STD_CS				10
         #define TLI4970_STD_DIO				12
+#else
+        #define TLI4970_STD_SPI				2
+        #define TLI4970_STD_CS				3
+        #define TLI4970_STD_DIO				0
 #endif			
 
 #define TLI4970_READOUT_ERROR		1
