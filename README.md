@@ -45,7 +45,7 @@ This library uses the [One Wire](https://github.com/PaulStoffregen/OneWire) libr
 
 #### Installation of the Library
 
-Please download this repository from GitHub by clicking on the following field in the latest [release](https://github.com/Infineon/TLI4970-Current-Sensor/releases) of this repository or directly [here](https://github.com/Infineon/TLI4970-Current-Sensor/releases/V1.0.0/TLI4970-Current-Sensor.zip):
+Please download this repository from GitHub by clicking on the following field in the latest [release](https://github.com/Infineon/TLI4970-Current-Sensor/releases) of this repository or directly [here](https://github.com/Infineon/TLI4970-Current-Sensor/releases/download/V1.0.2/TLI4970-Current-Sensor_V102.zip):
 
 ![Download Library](https://raw.githubusercontent.com/infineon/assets/master/Pictures/Releases_Generic.jpg)
 
