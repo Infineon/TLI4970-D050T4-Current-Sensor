@@ -21,7 +21,7 @@ install:
     - platformio platform install -f atmelavr
 
 script:
-    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit  --board=xmc4700_relax_kit --board=uno --project-option="lib_deps=[Wire OneWire]"
+    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit  --board=xmc4700_relax_kit --board=uno --project-option="lib_deps=Wire, OneWire"
 
 after_success:
     # only build once (after one job by checking id, however this does not work reliably)
