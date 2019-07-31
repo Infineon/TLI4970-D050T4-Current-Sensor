@@ -34,28 +34,26 @@
 #ifndef TLI4970_CONSTS_H_INCLUDED
 #define TLI4970_CONSTS_H_INCLUDED
 
-
-
 #if defined(XMC1100_XMC2GO) || defined(XMC1100_H_BRIDGE2GO)
-        #define TLI4970_STD_SPI				2
-        #define TLI4970_STD_CS				3
-        #define TLI4970_STD_DIO				0
-#elif defined(XMC1100_Boot_Kit) ||defined(XMC1300_Boot_Kit) || defined(XMC1400_Boot_Kit) || defined(XMC4700_Relax_Kit)
-	    #define TLI4970_STD_SPI				13
-        #define TLI4970_STD_CS				10
-        #define TLI4970_STD_DIO				12
+        #define TLI4970_STD_SPI                         2
+        #define TLI4970_STD_CS                          3
+        #define TLI4970_STD_DIO                         0
+#elif defined(XMC1100_Boot_Kit) ||defined(XMC1300_Boot_Kit) || defined(XMC1400_Boot_Kit) || defined(XMC4700_Relax_Kit) || defined(ARDUINO_AVR_UNO) /**< MyIoT Adapter Socket 1 */
+        #define TLI4970_STD_SPI                         13
+        #define TLI4970_STD_CS                          10
+        #define TLI4970_STD_DIO                         12
 #else
-        #define TLI4970_STD_SPI				2
-        #define TLI4970_STD_CS				3
-        #define TLI4970_STD_DIO				0
+        #define TLI4970_STD_SPI                         2
+        #define TLI4970_STD_CS                          3
+        #define TLI4970_STD_DIO                         0
 #endif			
 
-#define TLI4970_READOUT_ERROR		1
-#define TLI4970_READOUT_SUCCESS		0
+#define TLI4970_READOUT_ERROR                   1
+#define TLI4970_READOUT_SUCCESS                 0
 
-#define TLI4970_NUM_EEPROM_MASKS	16
-#define TLI4970_NUM_EEPROM			7
-#define TLI4970_NUM_STATUS			1
+#define TLI4970_NUM_EEPROM_MASKS                16
+#define TLI4970_NUM_EEPROM                      7
+#define TLI4970_NUM_STATUS                      1
 
 
 #endif
