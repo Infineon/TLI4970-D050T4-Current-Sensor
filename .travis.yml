@@ -1,7 +1,10 @@
 language: python
 python:
-    - "2.7"
-        
+    - 3.7
+
+sudo: required
+
+cache: pip
 branches:
   only:
     - master
@@ -23,14 +26,3 @@ install:
 script:
     - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit  --board=xmc4700_relax_kit --board=uno --project-option="lib_deps=Wire, OneWire"
 
-after_success:
-    # only build once (after one job by checking id, however this does not work reliably)
-    # - |
-    #   if [ $(($TRAVIS_JOB_ID - $TRAVIS_BUILD_ID)) -eq 2 ]; then
-    #     export REPO_NAME=${TRAVIS_REPO_SLUG#*/}
-    #     git clone https://github.com/Infineon/InfineonDoxyGenerator.git
-    #     cd well-automated-documentation/docs
-    #     # cd $TRAVIS_BUILD_DIR/docs
-    #     chmod +x publish_pdf.sh
-    #     ./publish_pdf.sh
-    #   fi
