@@ -1,4 +1,6 @@
 # TLI4970-Current-Sensor
+[![Compile Examples](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/workflows/Compile%20Examples/badge.svg)](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/actions?workflow=Compile+Examples)
+
 
 [![Build Status](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor.svg?branch=master)](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor)
 
