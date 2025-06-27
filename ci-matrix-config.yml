@@ -1,0 +1,8 @@
+exclude:
+  # Disabled boards failing to compile 
+  # TODO: Evaluate which to enable or keep disabled
+  - fqbn:
+    - arduino:renesas_uno:minima
+    - arduino:renesas_uno:unor4wifi
+    - arduino:samd:mkrzero
+    - infineon:psoc6:cy8ckit_062s2_ai
