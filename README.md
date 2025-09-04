@@ -1,13 +1,16 @@
 # TLI4970-Current-Sensor
 
-[![Build Status](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor.svg?branch=master)](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor)
+[![Build Status](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/actions/workflows/compile_examples.yml/badge.svg?branch=master)](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor)
+[![Check links](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml/badge.svg)](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml)
+
+
 
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/TLI4970_PP.jpg" width=300>
 
-Library of Infineon's [TLI4970](https://www.infineon.com/cms/en/product/sensor/current-sensors/tli4970-d050t4/) current sensor for Arduino.
+Library of Infineon's [TLI4970](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/wiki) current sensor for Arduino.
 
 ## Summary
-The [TLI4970](https://www.infineon.com/cms/en/product/sensor/current-sensors/tli4970-d050t4/) is a high-precision current sensor based on Infineon's proven Hall technology. 
+The [TLI4970](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/wiki) is a high-precision current sensor based on Infineon's proven Hall technology. 
 The coreless concept significantly reduces footprint compared with existing solutions. TLI4970 is an easy-to-use, fully digital solution that does not require external calibration or additional parts such as A/D converters, 0 pAmps or reference voltage. It thus significantly reduces overall implementation efforts as well as PCB space and cost.
 
 ## Key Features and Benefits
@@ -30,7 +33,7 @@ The coreless concept significantly reduces footprint compared with existing solu
 * Electrical drives
 
 ## Hardware
-Please find the datasheet of the TLI4970 variant [here](https://www.infineon.com/dgdl/Infineon-TLI4970-D050T4-DS-v01_01-EN.pdf?fileId=5546d4625607bd1301562c43e04f38ad). 
+Please find the datasheet of the TLI4970 variant [here](https://www.infineon.com/assets/row/public/documents/24/68/infineon-tli4970-d050t4-currentsense-shield2go-qs-july18-gs-en.pdf). 
 Please ensure that you have the TLI4970-D050T4 variant of the sensor as the library has been designed for this one.
 
 ## Installation
@@ -59,7 +62,7 @@ Please see the example sketches in the `/examples` directory in this library to 
 Currently, there exist two separate evaluation boards:
 
 * [TLI4970050 2 GO KIT](https://www.infineon.com/cms/en/product/promopages/sensors-2go/#current-sensor-2go)
-* [TLI4970 CurrentSense Shield2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go_cur-sense_tli4970/)
+* [TLI4970 CurrentSense Shield2Go](https://www.infineon.com/assets/row/public/documents/24/68/infineon-tli4970-d050t4-currentsense-shield2go-qs-july18-gs-en.pdf)
 
 ### Usage with TLI4970050 2 GO KIT
 The Current Sensor 2GO is a budget-priced evaluation board equipped with the TLI4970-D050T4 current sensor combined with an ARM® Cortex™-M0 CPU. The Current Sensor 2GO has a complete set of on-board devices, including an on-board debugger. Build your own application and gadget with the Current Sensor 2GO.
@@ -78,7 +81,7 @@ However, every Shield2Go is directly compatible with Infineon's XMC2Go and the r
 
 ## Board Information, Datasheet and Additional Information
 
-The datasheet for the TLI4970-D050T4 can be found here [TLI4970-D050T4 Datasheet](https://www.infineon.com/dgdl/Infineon-TLI4970-D050T4-DS-v01_01-EN.pdf?fileId=5546d4625607bd1301562c43e04f38ad) while respective application notes and more documents are located here [Application Notes](https://www.infineon.com/cms/en/product/sensor/current-sensors/tli4970-d050t4/#!documents).
-The product page is located [here](https://www.infineon.com/cms/en/product/sensor/current-sensors/tli4970-d050t4/).
+The datasheet for the TLI4970-D050T4 can be found here [TLI4970-D050T4 Datasheet](https://www.infineon.com/assets/row/public/documents/24/68/infineon-tli4970-d050t4-currentsense-shield2go-qs-july18-gs-en.pdf) while respective application notes and more documents are located here [Application Notes](https://www.infineon.com/assets/row/public/documents/24/68/infineon-tli4970-d050t4-currentsense-shield2go-qs-july18-gs-en.pdf).
+The product page is located [here](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/wiki).
 
 Please check the [wiki](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/wiki) with more information for the TLI4970 CurrentSense Shield2Go as well.
