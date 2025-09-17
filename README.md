@@ -1,7 +1,7 @@
 # TLI4970-Current-Sensor
 
 [![Build Status](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/actions/workflows/compile_examples.yml/badge.svg?branch=master)](https://travis-ci.org/Infineon/TLI4970-D050T4-Current-Sensor)
-[![Check links](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml/badge.svg)](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml)
+[![Check links](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/actions/workflows/check_links.yml/badge.svg)](https://github.com/Infineon/TLI4970-D050T4-Current-Sensor/actions/workflows/check_links.yml)
 
 
 
